@@ -4168,7 +4168,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
   }
   .navbar-expand-lg .navbar-nav {
@@ -4326,7 +4326,7 @@ textarea.form-control-lg {
   }
 }
 .navbar-expand {
-  flex-wrap: nowrap;
+  flex-flow: nowrap;
   justify-content: flex-start;
 }
 .navbar-expand .navbar-nav {
@@ -7776,7 +7776,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: var(--second-color);
+  background-color: var(--second-color, black);
 }
 
 .bg-dark {
