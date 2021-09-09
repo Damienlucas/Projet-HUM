@@ -26,6 +26,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+h1{
+    margin-bottom: 20px;
+}
 .flex-justi-ali-center{
     display: flex;
     justify-content: center;
@@ -39,6 +42,11 @@ body{
 .space-between{
     display: flex;
     justify-content: space-between;
+}
+.space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .italic{
     font-style: italic;
@@ -54,6 +62,9 @@ body{
 }
 .text-justify{
     text-align: justify;
+}
+.souligne{
+    text-decoration: underline;
 }
 /*----------------------------header---------------------------------------- */
 #header-logo{
@@ -145,6 +156,31 @@ body{
     background-color: var(--tirth-color, white);
     box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
+/* ----------------------------partie horaires  - paiements-------------------- */
+.liste-horaires h2{
+    margin-bottom: 30px;
+}
+.liste-horaires{
+    padding: 2rem;
+}
+.liste-horaires li{
+    font-size: 0.8rem;
+}
+.liste-horaires p{
+    margin: 30px 0;
+    font-size: 0.9rem;
+}
+.li-horaires{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.paid{
+    width: 40px;
+    height: auto;
+    padding: 30px 0;
+}
 /* ---------------------règles media querry--------------------------- */
 @media(min-width: 768px){
     #header-logo{
@@ -163,8 +199,18 @@ body{
     .presentation{
         font-size: 1.2rem;
     }
+    .liste-horaires p{
+        font-size: 1.1rem;
+    }
+    .li-horaires{
+        font-size: 1.3rem;
+    }
 }
 @media(min-width: 992px){
+    h1{
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
     .navbar-nav{
         font-size: 0.9rem;
         text-align: center;
@@ -194,6 +240,15 @@ body{
         width: 110%;
         height: auto;
     }
+    .liste-horaires h2{
+        font-size: 2.5rem;
+    }
+    .liste-horaires p{
+        font-size: 1.6rem;
+    }
+    .li-horaires{
+        font-size: 1.8rem;
+    }
 }  
 @media(min-width: 1200px){
     #header-logo{
@@ -210,6 +265,16 @@ body{
     .presentation{
         padding: 5rem;
         font-size: 1.4rem;
+    }
+    .li-horaires{
+        margin-top: 20px;
+    }
+    .liste-horaires p{
+        margin-bottom: 40px;
+    }
+    .paid{
+        width: 60px;
+        height: auto;
     }
 }
 @media(min-width: 1400px){
