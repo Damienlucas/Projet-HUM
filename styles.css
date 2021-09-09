@@ -66,6 +66,25 @@ h1{
 .souligne{
     text-decoration: underline;
 }
+.slide-line{
+    text-decoration: none;
+    position: relative;
+}
+.slide-line::before{
+    content: "";
+    position: absolute;
+    background: rgb(133, 230, 247);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.slide-line:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+} 
 /*----------------------------header---------------------------------------- */
 #header-logo{
     width: 200px;
@@ -195,6 +214,29 @@ h1{
     background-color: var(--tirth-color, white);
     box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
+/* -------------------------Téléphone et mail------------------------- */
+.tel-mail{
+    margin: 20px 0;
+    padding: 1rem;
+    border: 4px ridge var(--second-color, black);
+    border-radius: 40%;
+    background-color: var(--tirth-color, white);
+    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
+}
+.a-telmail{
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+.a-telmail:hover{
+    color: rgb(133, 230, 247);
+}
+.flex-telmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* ---------------------règles media querry--------------------------- */
 @media(min-width: 768px){
     #header-logo{
@@ -225,6 +267,9 @@ h1{
     #google-map{
         width: 100%;
         height: 250px;
+    }
+    .a-telmail{
+        font-size: 1rem;
     }
 }
 @media(min-width: 992px){
@@ -277,6 +322,9 @@ h1{
         width: 100%;
         height: 350px;
     }
+    .a-telmail{
+        font-size: 1.2rem;
+    }
 }  
 @media(min-width: 1200px){
     #header-logo{
@@ -307,6 +355,10 @@ h1{
     .map{
         padding: 5rem;
     }
+    .a-telmail{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
 }
 @media(min-width: 1400px){
     #header-logo{
@@ -326,5 +378,9 @@ h1{
     #google-map{
         width: 100%;
         height: 400px;
+    }
+    .a-telmail{
+        font-size: 1.6rem;
+        margin-top: 20px;
     }
 }
