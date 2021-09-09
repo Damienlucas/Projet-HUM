@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="HUM! la boulangerie nichée au coeur de Bourg-en-Bresse est à votre service pour émerveiller vos papilles. Retrouvez toutes les informations essentielles...">
         <title>Boulangerie HUM!</title>
-        <link href="./bootstrap.css" rel="stylesheet">
+        <link href="./bootstrap/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
         <link rel="icon" href="./images/logo/logo rouge-1.png">
     </head>
@@ -35,21 +35,13 @@
                             <span></span>
                             <span></span>
                             <p>
-                                La boulangerie
+                                A propos...
                             </p>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                            <p>
-                                Produits
-                            </p>
-                            <p>
-                                /
-                            </p>
-                            <p>
-                                 Services
-                            </p>    
+                            Produits / Services  
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -90,15 +82,7 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                            <p>
-                                Horaires
-                            </p>
-                            <p>
-                                 / 
-                            </p>
-                            <p>
-                                Moyens de paiement
-                            </p>    
+                            Horaires / Moyens de paiement  
                         </a>
                     </li>
                     <li class="nav-item nav-effet">
@@ -107,54 +91,7 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                            Adresse
-                        </a>
-                    </li>
-                    <li class="nav-item nav-effet">
-                        <a class="nav-link" href="#tel">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <p>
-                                Téléphone
-                            </p>
-                            <p>
-                                /
-                            </p>
-                            <p>
-                                E-m@il
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item nav-effet">
-                        <a class="nav-link" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <p class="construc2">Formulaire</p> 
-                            <!-- Formulaire -->
-                            <p class="construc">
-                                En construction
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item nav-effet">
-                        <a class="nav-link" href="#liens">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <p>
-                                Liens
-                            </p>
-                            <p>
-                                /
-                            </p>
-                            <p>
-                                Mentions légales
-                            </p>
+                            Comment nous trouver ?
                         </a>
                     </li>
                 </ul>
@@ -220,25 +157,35 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.2622518823214!2d5.22311561535724!3d46.20523779171163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f3523334cf740f%3A0x451e6ce99ebd5992!2sMairie%20de%20Bourg-en-Bresse!5e0!3m2!1sfr!2sfr!4v1631175011570!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="google-map"></iframe>
                 </div>
             </div>
-            <div class="row flex-justi-ali-center row-presentation" id="tel">
+            <div class="row flex-justi-ali-center row-presentation">
                 <div class="col-11 tel-mail">
                     <div class="row flex-justi-ali-center row-presentation">
                         <div class="col-11 col-md-5 presentation text-justify liste-horaires flex-telmail">
                             <h2 class="text-center italic souligne">Téléphone:</h2>
                             <a class="a-telmail slide-line" href="#">
-                                xx.xx.xx.xx.xx.
+                                <!-- xx.xx.xx.xx.xx. -->
+                                <p class="construc2">xx.xx.xx.xx.xx.
+                                </p>
+                                <p class="construc">
+                                    En construction
+                                </p> 
                             </a>
                         </div>
                         <div class="col-11 col-md-6 presentation text-justify liste-horaires flex-telmail">
                             <h2 class="text-center italic souligne">Adresse m@il:</h2>
                             <a class="a-telmail slide-line" href="#">
-                                hum-laboulangerie@xxx.xxx
+                                <!-- hum-laboulangerie@xxx.xxx -->
+                                <p class="construc2">hum-laboulangerie@xxx.xxx
+                                </p>
+                                <p class="construc">
+                                    En construction
+                                </p> 
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row space-between row-presentation" id="liens">
+            <div class="row space-between row-presentation">
                 <div class="col-5 col-md-3 mention-liens flex-telmail">
                     <a class="a-mention lien-decor" href="https://www.boulangerie.org/" target="_blank">
                             <span></span>
@@ -250,7 +197,7 @@
                 </div>
                 <div class="col-10 col-md-3 order-4 mention-liens flex-telmail">
 <!--------------------------------------------- Button trigger modal ------------------------------------------------------------------------------->
-                    <button type="button" class="btn btn-primary lien-decor" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="btn btn-primary lien-decor" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btn-mention">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -345,8 +292,7 @@
                                 </p>
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary lien-decor" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary lien-decor">Understood</button>
+                            <button type="button" class="btn btn-secondary lien-decor" data-bs-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                         </div>

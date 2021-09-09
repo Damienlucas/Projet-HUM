@@ -105,6 +105,14 @@ h1{
 .dropdown-item:hover .construc2{
     display: none;
 }
+.a-telmail:hover .construc{
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+.a-telmail:hover .construc2{
+    display: none;
+}
 /*----------------------------header---------------------------------------- */
 #header-logo{
     width: 200px;
@@ -355,6 +363,9 @@ h1{
 .modal-body a:hover{
     color: rgb(133, 230, 247);
 }
+#btn-mention{
+    font-size: 0.9rem;
+}
 /* ---------------------règles media querry--------------------------- */
 @media(min-width: 768px){
     #header-logo{
@@ -394,6 +405,9 @@ h1{
         margin: 20px 0;
     }
     .a-mention{
+        font-size: 1.1rem;
+    }
+    #btn-mention{
         font-size: 1.1rem;
     }
     .copyright{
@@ -454,6 +468,9 @@ h1{
         font-size: 1.2rem;
     }
     .a-mention{
+        font-size: 1.4rem;
+    }
+    #btn-mention{
         font-size: 1.4rem;
     }
     .copyright{
