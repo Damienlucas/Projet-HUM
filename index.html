@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item active nav-effet">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="#HUM!">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -49,17 +49,25 @@
                             </p>
                             <p>
                                  Services
-                            </p>      
+                            </p>    
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    Pain / Viennoiserie
+                                    <p class="construc2">Pain / Viennoiserie</p>
+                                    <!-- Pain / Viennoiserie -->
+                                    <p class="construc">
+                                        En construction
+                                    </p>  
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    Patisserie
+                                    <p class="construc2">Patisserie</p>
+                                    <!-- Patisserie -->
+                                    <p class="construc">
+                                        En construction
+                                    </p>  
                                 </a>
                             </li>
                             <li>
@@ -67,13 +75,17 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    Services
+                                    <p class="construc2">Services</p>
+                                    <!-- Services -->
+                                    <p class="construc">
+                                        En construction
+                                    </p>  
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item nav-effet">
-                        <a class="nav-link nav-effet" href="#">
+                        <a class="nav-link nav-effet" href="#horaires">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -90,7 +102,7 @@
                         </a>
                     </li>
                     <li class="nav-item nav-effet">
-                        <a class="nav-link nav-effet" href="#">
+                        <a class="nav-link nav-effet" href="#adresse">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -99,7 +111,7 @@
                         </a>
                     </li>
                     <li class="nav-item nav-effet">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#tel">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -121,11 +133,15 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                            Formulaire
+                            <p class="construc2">Formulaire</p> 
+                            <!-- Formulaire -->
+                            <p class="construc">
+                                En construction
+                            </p>
                         </a>
                     </li>
                     <li class="nav-item nav-effet">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#liens">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -146,7 +162,7 @@
         </nav>
         <section>
             <div class="row flex-justi-ali-center row-presentation">
-                <div class="col-11 col-md-5 order-first order-md-last">
+                <div class="col-11 col-md-5 order-first order-md-last" id="HUM!">
                     <img src="./images/fond/boulangerie/pexels-dmitry-zvolskiy-2253643(1).jpg" alt="Photo de l'intérieur de la boulangerie HUM!" id="interieur-boulangerie">
                 </div>
                 <div class="col-11 col-md-6 presentation text-justify">
@@ -156,7 +172,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row flex-justi-ali-center row-presentation">
+            <div class="row flex-justi-ali-center row-presentation"  id="horaires">
                 <div class="col-11 col-md-6 presentation text-justify liste-horaires">
                     <h2 class="text-center italic souligne">Horaires:</h2>
                     <ul>
@@ -189,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row flex-justi-ali-center row-presentation">
+            <div class="row flex-justi-ali-center row-presentation" id="adresse">
                 <div class="col-11 col-md-5 presentation text-justify liste-horaires">
                     <h2 class="text-center italic souligne">Adresse:</h2>
                     <p class="text-center">
@@ -204,7 +220,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.2622518823214!2d5.22311561535724!3d46.20523779171163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f3523334cf740f%3A0x451e6ce99ebd5992!2sMairie%20de%20Bourg-en-Bresse!5e0!3m2!1sfr!2sfr!4v1631175011570!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="google-map"></iframe>
                 </div>
             </div>
-            <div class="row flex-justi-ali-center row-presentation">
+            <div class="row flex-justi-ali-center row-presentation" id="tel">
                 <div class="col-11 tel-mail">
                     <div class="row flex-justi-ali-center row-presentation">
                         <div class="col-11 col-md-5 presentation text-justify liste-horaires flex-telmail">
@@ -222,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row space-between row-presentation">
+            <div class="row space-between row-presentation" id="liens">
                 <div class="col-5 col-md-3 mention-liens flex-telmail">
                     <a class="a-mention lien-decor" href="https://www.boulangerie.org/" target="_blank">
                             <span></span>
@@ -233,13 +249,108 @@
                     </a>
                 </div>
                 <div class="col-10 col-md-3 order-4 mention-liens flex-telmail">
-                    <a class="a-mention lien-decor" href="#">
+<!--------------------------------------------- Button trigger modal ------------------------------------------------------------------------------->
+                    <button type="button" class="btn btn-primary lien-decor" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Mentions légales 
-                    </a>
+                        Mentions légales
+                    </button>
+<!---------------------------------------------------- Modal--------------------------------------------------------- -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Mentions légales</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5 class="text-center">Objet du site</h5>
+                                <p>
+                                    Le site vous permet de trouver toutes les informations relatives à la boulangerie HUM!.
+                                </p>
+                                <h5 class="text-center">Hébergement</h5>   
+                                <p>
+                                    En cours.
+                                </p>
+                                <h5 class="text-center">Conditions générales d'utilisation</h5>             
+                                <p>
+                                    Ce site respecte le droit d'auteur. Tous les droits des auteurs des Oeuvres protégées reproduites et communiquées sur ce site, sont réservés. Sauf autorisation, toute utilisation des Oeuvres autres que la reproduction et la consultation individuelles et privées sont interdites. 
+                                    HUM! La boulangerie consent à l'utilisateur le droit de consultation desdits sites pour son usage strictement personnel et privé. Toute reproduction, rediffusion ou commercialisation totale ou partielle du contenu est interdite.
+                                    Il est interdit de recueillir ou de faire utilisation des données personnelles présentes sur ce site.
+                                    Il est strictement interdit de copier le contenu de ce site et de le publier sur un autre site/blog sans l’accord de l’auteur.
+                                    Il est conseillé de se référer régulièrement à la présente page, qui est susceptible d’évoluer.
+                                    Toutes les informations sur ce site sont données à titre indicatif. Ces informations peuvent s’avérer inexactes, le site ne peut en être tenu pour responsable.
+                                </p>
+                                <h6 class="text-center">Informations sur les contenus :</h6>     
+                                <p>
+                                    Responsable des publications :  
+                                    Propriétée des images : Personnelles ou libres de droits 
+                                </p>
+                                <h6 class="text-center">Droit de reproduction</h6>
+                                <p>
+                                    Les différents articles postés sur le site sont le résultat d’un long travail de leurs auteurs respectifs, ils sont protégés par les dispositions du code de propriété intellectuelle du droit français. Les articles publiés sont des articles originaux et nous n’accepterons aucun article plagié, modifié ou adapté sans l’accord de son auteur.       
+                                    Pour obtenir l’accord d’un auteur, merci de Nous contacter.
+                                </p>
+                                <h6 class="text-center">Liens hypertextes</h6>
+                                <p>
+                                    Le site contient des liens hypertextes vers des sites web éditées et/ou gérés par des tiers. 
+                                    HUM! La boulangerie ne fait aucun contrôle de ces ressources externes. L’utilisateur reconnait donc que 
+                                    HUM! La boulangerie ne peut être tenu responsable de celles-ci.
+                                </p>
+                                <h5 class="text-center">Protection de vos données personnelles</h5>
+                                <p>
+                                    HUM! La boulangerie respecte la législation française et européenne en matière de collecte et de traitement des données personnelles.
+                                    Constitue une “donnée personnelle” toute information identifiant directement ou indirectement une personne physique.
+                                    Dans le cadre de l’activité de notre site et afin d’améliorer la qualité de nos services, nous collectons des données personnelles auprès de nos utilisateurs.
+                                </p>
+                                <h6 class="text-center">Vos droits</h6>
+                                <p>
+                                    Vous pouvez à tout moment nous contacter pour demander la modification ou la suppression des données personnelles vous concernant, conformément :
+                                </p>
+                                <ul>
+                                    <li>
+                                        à la Directive 95/46/CE du 24 octobre 1995 et de la loi n° 78-17 du 6 janvier 1978 « Informatique et Libertés »
+                                    </li>
+                                    <li>
+                                        à la Directive 2002/58/CE du 12 juillet 2002 « ePrivacy » modifiée par la Directive 2009/136/CE
+                                    </li>
+                                    <li>
+                                        au Règlement (UE) n°2016/679 du 27 avril 2016 dit « Règlement Général sur la Protection des Données »
+                                    </li>
+                                </ul>
+                                <h6 class="text-center">Données collectées via les formulaires</h6>
+                                <p>
+                                    Nous nous servons des données collectées via nos formulaires pour :
+                                </p>
+                                <ul>
+                                    <li>
+                                        répondre à votre demande lorsque vous nous contactez
+                                    </li>
+                                    <li>
+                                        alimenter et gérer nos bases de données clients et prospects
+                                    </li>
+                                    <li>
+                                        mettre en oeuvre nos campagnes d’emailing
+                                    </li>
+                                </ul>
+                                <p>
+                                    Les données ainsi collectées seront conservées pour une durée maximale de 3 ans. Votre consentement pour la collecte et le traitement de ces données sera recueilli avant l’envoi du formulaire, et sera renouvelé tous les 12 mois ou révoqué à tout moment sur demande.
+                                </p>
+                                <h5 class="text-center">Développeur web du site :</h5>
+                                <p>
+                                    Linkedin : 
+                                    <a href="https://www.linkedin.com/in/damien-l-b84a631a8" target="_blank" class="slide-line section-site">LUCAS Damien</a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary lien-decor" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary lien-decor">Understood</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
                     <p class="copyright">
                         /
                     </p>
