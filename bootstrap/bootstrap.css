@@ -9,6 +9,11 @@
   --main-color: #efdcd5;
   --second-color: #8c7b75;
   --tirth-color: #d3b8ae;
+  --quatr-color: #bcaaa4;
+  --cinq-color: #a1887f;
+  --six-color: #d7ccc8;
+  --sept-color: #fffffb;
+  --huit-color: #a69b97;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -3972,7 +3977,8 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem;
   position: sticky;
   top: 0px;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  /* border-radius: 30px; */
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3990,6 +3996,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4420,7 +4427,7 @@ textarea.form-control-lg {
   color: white;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgb(133, 230, 247);
+  color: #efdcd5;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
