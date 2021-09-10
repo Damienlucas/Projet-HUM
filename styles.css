@@ -385,6 +385,90 @@ h1{
 #btn-mention:hover{
     color: #725b53;
 }
+/* -------------------------footer-------------------------------------- */
+footer{
+    margin-bottom: 15px;
+    position: sticky;
+    bottom: 0;  
+}
+.footer-a-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--second-color);
+    padding: 5px;
+}
+.a-footer{
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+}
+.a-footer:hover{
+    color: #efdcd5;
+}
+.footer-decor{
+    position: relative;
+    overflow: hidden;
+}
+.footer-decor:hover{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
+.footer-decor span{
+    position: absolute;
+    display: block;
+}
+.footer-decor span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,white);
+}
+.footer-decor span:nth-child(1){
+    left: 100%;
+   transition: 1s;
+}
+.footer-decor span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,white);
+}
+.footer-decorr:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.footer-decor span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,white);
+}
+.footer-decor:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.footer-decor span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,white);
+}
+.footer-decor:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
 /* ---------------------règles media querry--------------------------- */
 @media(min-width: 768px){
     #header-logo{
@@ -552,5 +636,8 @@ h1{
     .a-telmail{
         font-size: 1.6rem;
         margin-top: 20px;
+    }
+    .a-footer{
+        font-size: 0.7rem;
     }
 }
