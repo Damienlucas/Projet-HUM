@@ -90,6 +90,9 @@ h1{
     transform-origin: 0 0;
     transform: scaleX(1);
 } 
+.margin-auto{
+    margin: 10px auto;
+}
 /* -------------------------------en construction--------------------------- */
 .construc{
     display: none;
@@ -227,6 +230,16 @@ h1{
     background-color: var(--tirth-color, white);
     box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
+.presentation-carousel{
+    color: var(--text-color, black);
+    margin: 20px auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 4px ridge var(--second-color, black);
+    border-radius: 50%;
+    background-color: var(--tirth-color, white);
+    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
+}
 .histo-1{
     margin: 15px auto;
 }
@@ -240,6 +253,19 @@ h1{
 }
 .ul-li-equipe{
     margin: 10px 0;
+}
+/* ----------------------------carousel pain viennoiserie----------------------- */
+.carousel-pain{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+#carouselExampleCaptions{
+    width: 100%;
+    height: auto;
+}
+.carou-pain{
+    margin: 30px auto;
 }
 /* ----------------------------partie horaires  - paiements-------------------- */
 .liste-horaires h2{
@@ -620,6 +646,9 @@ footer{
     }
     #photo-equipe{
         height: 200px;
+    }
+    .presentation-carousel{
+        margin: 20px 40px;
     }
 }  
 @media(min-width: 1200px){
