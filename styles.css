@@ -216,51 +216,45 @@ h1{
     height: auto;
     border-radius: 25%;
 }
-.presentation-rectangle{
+.presentation{
     color: var(--text-color, black);
-    margin: 20px 0;
-    padding: 4rem;
     font-size: 1.1rem;
     border: 4px ridge var(--second-color, black);
+    background-color: var(--tirth-color, white);
+    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
+}
+.rectangle{
+    margin: 20px 0;
+    padding: 4rem;
     border-radius: 10px;
-    background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
-.presentation-radius{
-    color: var(--text-color, black);
+.radius{
     margin: 20px 0;
     padding: 4rem;
-    font-size: 1.1rem;
-    border: 4px ridge var(--second-color, black);
     border-radius: 40%;
-    background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
-.presentation-carousel{
-    color: var(--text-color, black);
+.carousel{
     margin: 20px auto;
     padding: 1rem;
-    font-size: 1.1rem;
-    border: 4px ridge var(--second-color, black);
     border-radius: 50%;
-    background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
-.presentation-services{
-    color: var(--text-color, black);
+.services{
     margin: 20px 0;
     padding: 1rem;
-    font-size: 1.1rem;
-    border: 4px ridge var(--second-color, black);
     border-radius: 10px;
-    background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
-    .histo-1{
-    margin: 15px auto;
+.histo-1{
+    margin: 35px auto;
 }
 .div-h2{
     margin-bottom: 20px;
+}
+#qui{
+    margin-top: 30px;
+}
+#services{
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 /* ---------------------------partie equipe-------------------------------------- */
 #photo-equipe{
@@ -281,15 +275,28 @@ h1{
     height: auto;
 }
 .carou-pain{
-    margin: 30px auto;
+    margin: 20px auto;
 }
 /* -----------------------------services---------------------------------------- */
 .img-services{
     border-radius: 20px;
+    margin: 30px auto;
 }
 #presse{
     width: 100%;
     height: auto;
+}
+.services-titre{
+    color: var(--text-color, black);
+    padding: 2rem;
+    border: 4px ridge var(--second-color, black);
+    border-radius: 50%;
+    background-color: var(--tirth-color, white);
+    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
+    margin: 30px auto;
+}
+.liv{
+    margin: auto;
 }
 /* ----------------------------partie horaires  - paiements-------------------- */
 .liste-horaires h2{
@@ -348,6 +355,10 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#ho-2{
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 /* --------------------------liens------------------------------------- */
 .mention-liens{
@@ -551,16 +562,15 @@ footer{
         justify-content: space-between;
         margin: 2rem 2rem;
     }
+    .row-presentation2{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 2rem;
+    }
     .navbar{
         margin: 0.5rem 0;
     }
     .presentation{
-        font-size: 1.2rem;
-    }
-    .presentation-rectangle{
-        font-size: 1.2rem;
-    }
-    .presentation-radius{
         font-size: 1.2rem;
     }
     .liste-horaires p{
@@ -623,12 +633,6 @@ footer{
     .presentation{
         font-size: 1.4rem;
     }
-    .presentation-rectangle{
-        font-size: 1.4rem;
-    }
-    .presentation-radius{
-        font-size: 1.4rem;
-    }
     #nav-logo{
         width: 110%;
         height: auto;
@@ -678,16 +682,15 @@ footer{
         font-size: 1.2rem;
     }
     .presentation{
-        padding: 5rem;
+        padding: 2rem;
         font-size: 1.4rem;
     }
-    .presentation-rectangle{
+    #qui{
         padding: 5rem;
-        font-size: 1.4rem;
     }
-    .presentation-radius{
-        padding: 5rem;
-        font-size: 1.4rem;
+    .services{
+        padding: 1rem;
+        font-size: 1.2rem;
     }
     .li-horaires{
         margin-top: 20px;
@@ -706,6 +709,9 @@ footer{
     #photo-equipe{
         height: auto;
     }
+    .histo-1{
+        margin: 40px auto;
+    }
 }
 @media(min-width: 1400px){
     #header-logo{
@@ -719,11 +725,8 @@ footer{
     .presentation{
         font-size: 1.5rem;
     }
-    .presentation-rectangle{
-        font-size: 1.5rem;
-    }
-    .presentation-radius{
-        font-size: 1.5rem;
+    .services{
+        font-size: 1.2rem;
     }
     #google-map{
         width: 100%;
