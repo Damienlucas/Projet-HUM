@@ -39,6 +39,12 @@ h1{
     justify-content: center;
     align-items: center;    
 }
+.column-justi-ali-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
 .inline-justi-ali-center{
     display: inline-block;
     justify-content: space-around;
@@ -240,7 +246,17 @@ h1{
     background-color: var(--tirth-color, white);
     box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
-.histo-1{
+.presentation-services{
+    color: var(--text-color, black);
+    margin: 20px 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 4px ridge var(--second-color, black);
+    border-radius: 10px;
+    background-color: var(--tirth-color, white);
+    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
+}
+    .histo-1{
     margin: 15px auto;
 }
 .div-h2{
@@ -266,6 +282,14 @@ h1{
 }
 .carou-pain{
     margin: 30px auto;
+}
+/* -----------------------------services---------------------------------------- */
+.img-services{
+    border-radius: 20px;
+}
+#presse{
+    width: 100%;
+    height: auto;
 }
 /* ----------------------------partie horaires  - paiements-------------------- */
 .liste-horaires h2{
