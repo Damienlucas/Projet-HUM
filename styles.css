@@ -295,16 +295,12 @@ h1{
 /* --------------------------adresse---------------------------------- */
 #google-map{
     width: 100%;
-    height: 100%;
+    height: 250px;
     border-radius: 30px;
 }
 .map{
     margin: 20px 0;
-    padding: 3rem;
-    border: 4px ridge var(--second-color, black);
     border-radius: 10px;
-    background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white);
 }
 /* -------------------------Téléphone et mail------------------------- */
 .tel-mail{
@@ -549,9 +545,6 @@ footer{
     .li-horaires{
         font-size: 1.3rem;
     }
-    .map{
-        padding: 3rem;
-    }
     #google-map{
         width: 100%;
         height: 250px;
@@ -625,9 +618,6 @@ footer{
     .li-horaires{
         font-size: 1.8rem;
     }
-    .map{
-        padding: 4rem;
-    }
     #google-map{
         width: 100%;
         height: 350px;
@@ -685,9 +675,6 @@ footer{
         width: 60px;
         height: auto;
     }
-    .map{
-        padding: 5rem;
-    }
     .a-telmail{
         font-size: 1.4rem;
         margin-top: 20px;
@@ -713,9 +700,6 @@ footer{
     }
     .presentation-radius{
         font-size: 1.5rem;
-    }
-    .map{
-        padding: 6rem;
     }
     #google-map{
         width: 100%;
