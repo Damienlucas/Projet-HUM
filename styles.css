@@ -14,6 +14,7 @@ p{
     padding: 0;
 }
 /* ----------------------------règles générales------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allison&family=Caveat&family=Dancing+Script&family=Great+Vibes&family=IM+Fell+English+SC&family=Luckiest+Guy&family=Parisienne&family=Playball&family=Poller+One&family=Sacramento&family=Satisfy&family=Tangerine:wght@700&display=swap');
 html{
     --main-color: #efdcd5;
     --second-color: #8c7b75;
@@ -33,6 +34,45 @@ body{
 }
 h1{
     margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6{
+    /* font-family: 'Alfa Slab One', cursive; */
+    /* font-family: 'IM Fell English SC', serif; */
+    /* font-family: 'Luckiest Guy', cursive; */
+    font-family: 'Poller One', cursive;
+}
+p{
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Tangerine', cursive;
+
+}
+li{
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Tangerine', cursive;
+}
+form{
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Tangerine', cursive;
+}
+a{
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Tangerine', cursive;
 }
 .flex-justi-ali-center{
     display: flex;
@@ -360,6 +400,97 @@ h1{
     margin-bottom: 0;
     margin-top: 20px;
 }
+/* --------------------------formulaire-------------------------------- */
+form{
+    width: 100%;
+    height: 100%;
+}
+.form-col{
+    margin: 10px auto;
+    font-size: 1rem;
+}
+#msg{
+    width: 200px;
+    height: 200px;
+}
+.row-col-form{
+    margin: 20px auto;
+}
+#envoyer{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color, white);
+    position: relative;
+    overflow: hidden;
+    border: 3px ridge var(--second-color);
+    border-radius: 10px;
+    transition: 0.8s;
+    padding: 15px;
+}
+.form-msg{
+    display: flex;
+    flex-direction: column;
+}
+#envoyer:hover{
+    border: none;
+    background: var(--thirth-color);
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+    transition-delay: 1s;
+}
+#envoyer span{
+    position: absolute;
+    display: block;
+}
+#envoyer span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,red);
+}
+#envoyer:hover span:nth-child(1){
+    left: 100%;
+   transition: 1s;
+}
+#envoyer span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,red);
+}
+#envoyer:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#envoyer span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,red);
+}
+#envoyer:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#envoyer span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,red);
+}
+#envoyer:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.envoyer-p{
+    font-size: 0.8rem;
+}
 /* --------------------------liens------------------------------------- */
 .mention-liens{
     color: var(--text-color, black);
@@ -602,6 +733,22 @@ footer{
     #photo-equipe{
         height: auto;
     }
+    #msg{
+        width: 250px;
+        height: 250px;
+    }
+    .row-form{
+        margin: 10px 0;
+    }
+    .form-col{
+        font-size: 1.2rem;
+    }
+    #envoyer{
+        font-size: 1.2rem;
+    }
+    .envoyer-p{
+        font-size: 1.2rem;
+    }
 }
 @media(min-width: 992px){
     h1{
@@ -668,6 +815,19 @@ footer{
     .presentation-carousel{
         margin: 20px 40px;
     }
+    .row-form{
+        margin: 20px 0;
+    }
+    .form-col{
+        font-size: 1.3rem;
+    }
+    #envoyer{
+        font-size: 1.3rem;
+    }
+    .form-msg{
+        display: flex;
+        flex-direction: row;
+    }
 }  
 @media(min-width: 1200px){
     #header-logo{
@@ -682,7 +842,6 @@ footer{
         font-size: 1.2rem;
     }
     .presentation{
-        padding: 2rem;
         font-size: 1.4rem;
     }
     #qui{
@@ -712,6 +871,24 @@ footer{
     .histo-1{
         margin: 40px auto;
     }
+    .row-form{
+        margin: 30px 0;
+    }
+    .row-col-form{
+        margin: 20px 0;
+    }
+    .row-presentation{
+        align-items: center;
+    }
+    .form-col{
+        font-size: 0.9rem;
+    }
+    .croix{
+        margin: 20px 0;
+    }
+    #envoyer{
+        font-size: 1rem;
+    }
 }
 @media(min-width: 1400px){
     #header-logo{
@@ -738,5 +915,19 @@ footer{
     }
     .a-footer{
         font-size: 0.7rem;
+    }
+    .row-form{
+        margin: 40px 0;
+    }
+    .form-col{
+        font-size: 1rem;
+    }
+    #envoyer{
+        font-size: 1.2rem;
+    }
+}
+@media(min-width: 1700px){
+    .form-col{
+        font-size: 1.2rem;
     }
 }
