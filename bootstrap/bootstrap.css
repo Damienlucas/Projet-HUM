@@ -2964,7 +2964,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -3978,6 +3978,7 @@ textarea.form-control-lg {
   position: sticky;
   top: 0px;
   margin: 0.5rem 0;
+  z-index: 99;
   /* border-radius: 30px; */
 }
 .navbar > .container,
@@ -5353,7 +5354,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -5563,10 +5564,16 @@ textarea.form-control-lg {
 .modal-xl {
     max-width: 800px;
   }
+  .modal-dialog {
+    max-width: 800px;
+  }
 }
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px;
+  }
+  .modal-dialog {
+    max-width: 1100px;
   }
 }
 .modal-fullscreen {
