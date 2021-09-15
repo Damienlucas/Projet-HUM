@@ -734,7 +734,7 @@ footer{
         padding: 2rem;
     }
     .liste-horaires p{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .li-horaires{
         font-size: 1.3rem;
@@ -777,6 +777,9 @@ footer{
     }
     .envoyer-p{
         font-size: 1.2rem;
+    }
+    #ho-2{
+        margin-bottom: 30px;
     }
 }
 @media(min-width: 992px){
@@ -825,7 +828,7 @@ footer{
         font-size: 2.5rem;
     }
     .liste-horaires p{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .li-horaires{
         font-size: 1.8rem;
