@@ -15,9 +15,6 @@ p{
 }
 /* ----------------------------règles générales------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allison&family=Caveat&family=Dancing+Script&family=Great+Vibes&family=IM+Fell+English+SC&family=Luckiest+Guy&family=Parisienne&family=Playball&family=Poller+One&family=Sacramento&family=Satisfy&family=Tangerine:wght@700&display=swap');
-@font-face {
-    font-display: optional;
-}
 html{
     --main-color: #efdcd5;
     --second-color: #8c7b75;
@@ -51,7 +48,6 @@ p{
     /* font-family: 'Sacramento', cursive; */
     /* font-family: 'Satisfy', cursive; */
     font-family: 'Tangerine', cursive;
-
 }
 li{
     /* font-family: 'Great Vibes', cursive; */
@@ -144,30 +140,6 @@ a{
 }
 /* -------------------------------en construction--------------------------- */
 .construc{
-    display: none;
-}
-.nav-link:hover .construc{
-    display: block;
-    color: orangered;
-    font-weight: bold;
-}
-.nav-link:hover .construc2{
-    display: none;
-}
-.dropdown-item:hover .construc{
-    display: block;
-    color: orangered;
-    font-weight: bold;
-}
-/* .nav-link:active .construc2{
-    display: none;
-}
-.dropdown-item:active .construc{
-    display: block;
-    color: red;
-    font-weight: bold;
-} */
-.dropdown-item:hover .construc2{
     display: none;
 }
 .a-telmail:hover .construc{
@@ -394,10 +366,7 @@ a{
 .tel-mail{
     margin: 20px auto;
     padding: 1rem;
-    /* border: 4px ridge var(--second-color, black); */
     border-radius: 40%;
-    /* background-color: var(--tirth-color, white);
-    box-shadow: 0 0 10px var(--second-color, white), 0 0 40px var(--second-color, white), 0 0 80px var(--second-color, white); */
 }
 .a-telmail{
     color: white;
